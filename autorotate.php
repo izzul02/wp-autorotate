@@ -2,8 +2,8 @@
 /*
 Plugin Name: Auto Rotate Post Pro
 description: A plugin to autorotate posts with specific rules.
-Version: 1.1
-Author: PUYUP
+Version: 1.1.1
+Author: PUYUP-izzul02
 License: Private
 */
 
