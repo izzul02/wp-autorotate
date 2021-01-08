@@ -1,0 +1,18 @@
+.arp-pagination {
+	margin-top: 15px;
+}
+
+.arp-pagination a {
+	text-decoration: none !important;
+}
+
+.arp-pagination .page-numbers {
+	padding: 2px 6px;
+	border: 1px solid #aaa;
+	display: inline-block;
+}
+
+.arp-pagination .page-numbers.current {
+	color: #fff;
+	background: #aaa;
+}
