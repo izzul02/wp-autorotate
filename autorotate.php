@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Auto Rotate Post Pro
+Plugin Name: Auto Rotate Post Lite
 description: A plugin to autorotate posts with specific rules.
 Version: 1.1.1
 Author: PUYUP-izzul02
@@ -241,9 +241,6 @@ register_deactivation_hook( __FILE__, 'arp_deactivation' );
 function arp_run_schedule_execute( $ruleset_id ) {
 	global $wpdb;
 
-    // print_r('CABE KU............');
-    // print_r( $ruleset_id );
-
 	$db_ruleset = 'arp_ruleset';
 	$ruleset = $wpdb->get_row( $wpdb->prepare( "
 		SELECT * FROM {$wpdb->prefix}{$db_ruleset}
@@ -260,7 +257,6 @@ function arp_run_schedule_execute( $ruleset_id ) {
 	    $rotator->post_age = $ruleset->post_age;
 	    $rotator->ruleset_id = $ruleset_id;
 
-	    // $query = $rotator->runRuleset();
 	    $postIds = $rotator->runRuleset();
 	    $log = $rotator->createLog($postIds);
 	}
